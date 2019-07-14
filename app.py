@@ -2,7 +2,7 @@
 import telebot
 import logging
 import sys
-# Usage: bot.py [TOKEN]
+# Usage: app.py [TOKEN]
 bot = telebot.TeleBot(sys.argv[1])
 
 logging.basicConfig(filename='pvChat_bot.log', format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
