@@ -1,1 +1,1 @@
-worker: python3 bot.py 889407559:AAFu-vWQUw1I77IALc6QdHWAoXxrbmE6L9A
+worker: python3 bot.py
