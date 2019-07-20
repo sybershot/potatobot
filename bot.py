@@ -8,6 +8,9 @@ bot = telebot.TeleBot(sys.argv[1])
 logging.basicConfig(filename='pvChat_bot.log', format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
                     level=logging.INFO)
 logger = logging.getLogger(__name__)
+ft = logging.Formatter("%(asctime)s - %(name)s - %(levelname)s - %(message)s")
+ch = logging.StreamHandler(sys.stdout)
+ch.setFormatter(ft)
 logger.setLevel(logging.INFO)
 
 @bot.message_handler(content_types=["text"])
